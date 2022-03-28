@@ -1,12 +1,10 @@
 # Github-Finder-App
 
-App to search Github users and display their info. I made this project as part of my React Front To Back 2022 course.
+App to search Github users and display their info. I made this project as part of the React Front To Back 2022 course.
 
 ---
 
 ## Usage
-
-Rename **_.env.example_** to **_.env_**
 
 You can use the Github API without a personal token, but if you want to use your token, add it to the .env file
 
