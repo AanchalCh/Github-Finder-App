@@ -4,7 +4,7 @@ import UserSearch from '../components/users/UserSearch'
 function Home() {
   return (
     <>
-      <UserSearch /> 
+      <UserSearch /> Fixing something that's not working. Will be up and running in no time.
       <UserResults />
     </>
   )
