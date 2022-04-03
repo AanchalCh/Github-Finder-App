@@ -9,11 +9,7 @@ function About() {
           {' '}
           React Front To Back
         </a>{' '}
-        Udemy course by
-        <strong>
-          <a href='https://traversymedia.com'> Brad Traversy</a>
-        </strong>
-        built by
+        Udemy course built as a personal project by
         <strong>
           <a href='https://www.linkedin.com/in/aanchal-chaurasia-201200191/'> Aanchal Chaurasia </a>
         </strong>
