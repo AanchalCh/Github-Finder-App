@@ -1,23 +1,16 @@
-# Github-Finder-App
+# Github Finder
 
-App to search Github users and display their info. I made this project as part of the React Front To Back 2022 course.
-
----
+> React app to search Github profiles. This app uses the Context API along with the useContext and useReducer hooks for state management and is part of the project I made while completing the bootcamp course "Modern React Front To Back" on Udemy
 
 ## Usage
 
-You can use the Github API without a personal token, but if you want to use your token, add it to the .env file
+### `npm install`
 
-Learn how to create a token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+### `npm start`
 
-### Install Dependencies
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000)
 
-```
-npm install
-```
+### `npm run build`
 
-### Run
-
-```
-npm start
-```
+Builds the app for production to the `build` folder.<br>
