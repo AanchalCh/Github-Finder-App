@@ -1,38 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import User from './components/users/User';
-import Alert from './components/layout/Alert';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import NotFound from './components/pages/NotFound';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import Alert from './components/layout/Alert'
+import Home from './pages/Home'
+import About from './pages/About'
+import User from './pages/User'
+import NotFound from './pages/NotFound'
+import { GithubProvider } from './context/github/GithubContext'
+import { AlertProvider } from './context/alert/AlertContext'
 
-import GithubState from './context/github/GithubState';
-import AlertState from './context/alert/AlertState';
+// NOTE: Alert is only used on the '/' route moving to that route we can prevent
+// content shift when alert shows by hiding and unhiding the Alert rather than
+// conditionally rendering
 
-import './App.css';
-
-const App = () => {
+function App() {
   return (
-    <GithubState>
-      <AlertState>
+    <GithubProvider>
+      <AlertProvider>
         <Router>
-          <div className='App'>
+          <div className='flex flex-col justify-between h-screen'>
             <Navbar />
-            <div className='container'>
-              <Alert />
-              <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/user/:login' component={User} />
-                <Route component={NotFound} />
-              </Switch>
-            </div>
+
+            <main className='container mx-auto px-3 pb-12'>
+              <Routes>
+                <Route
+                  path='/'
+                  element={
+                    <>
+                      <Alert />
+                      <Home />
+                    </>
+                  }
+                />
+                <Route path='/about' element={<About />} />
+                <Route path='/user/:login' element={<User />} />
+                <Route path='/notfound' element={<NotFound />} />
+                <Route path='*' element={<NotFound />} />
+              </Routes>
+            </main>
+
+            <Footer />
           </div>
         </Router>
-      </AlertState>
-    </GithubState>
-  );
-};
+      </AlertProvider>
+    </GithubProvider>
+  )
+}
 
-export default App;
+export default App

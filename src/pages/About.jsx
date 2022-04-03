@@ -9,9 +9,9 @@ function About() {
           {' '}
           React Front To Back
         </a>{' '}
-        Udemy course built as a personal project by
+        Udemy course by
         <strong>
-          <a href='https://www.linkedin.com/in/aanchal-chaurasia-201200191/'> Aanchal Chaurasia </a>
+          <a href='https://traversymedia.com'> Brad Traversy</a>
         </strong>
         .
       </p>
