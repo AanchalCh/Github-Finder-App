@@ -15,6 +15,15 @@ function About() {
         </strong>
         .
       </p>
+      <p className='text-lg text-gray-400'>
+        Version <span className='text-white'>1.0.0</span>
+      </p>
+      <p className='text-lg text-gray-400'>
+        Layout By:
+        <a className='text-white' href='https://twitter.com/hassibmoddasser'>
+          Hassib Moddasser
+        </a>
+      </p>
     </>
   )
 }
