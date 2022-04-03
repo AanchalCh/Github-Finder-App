@@ -1,6 +1,6 @@
 # Github Finder App
 
-App to search Github users and display their info. This is part of the project I made in React Front To Back 2022 course.
+App to search Github users and display their info. This is the project I made as part of the React Front To Back 2022 course.
 
 ---
 
