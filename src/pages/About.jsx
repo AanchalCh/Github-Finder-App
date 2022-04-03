@@ -13,6 +13,10 @@ function About() {
         <strong>
           <a href='https://traversymedia.com'> Brad Traversy</a>
         </strong>
+        built by
+        <strong>
+          <a href='https://www.linkedin.com/in/aanchal-chaurasia-201200191/'> Aanchal Chaurasia </a>
+        </strong>
         .
       </p>
       <p className='text-lg text-gray-400'>
